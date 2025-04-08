@@ -1,21 +1,30 @@
 package in.bushansirgur.foodiesapi.controller;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import in.bushansirgur.foodiesapi.io.FoodRequest;
-import in.bushansirgur.foodiesapi.io.FoodResponse;
-import in.bushansirgur.foodiesapi.service.FoodService;
-import lombok.AllArgsConstructor;
+import java.util.List;
+
 import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestPart;
+import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.server.ResponseStatusException;
 
-import java.util.List;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import in.bushansirgur.foodiesapi.io.FoodRequest;
+import in.bushansirgur.foodiesapi.io.FoodResponse;
+import in.bushansirgur.foodiesapi.service.FoodService;
 
 @RestController
 @RequestMapping("/api/foods")
+@CrossOrigin("*")
 public class FoodController {
 
     private final FoodService foodService;
