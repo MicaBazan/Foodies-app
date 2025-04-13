@@ -16,8 +16,9 @@ const ExploreMenu = () => {
           {
             categories.map((item, index) => {
               return (
-                <div className="text-center explore-menu-list-item">
-                  
+                <div key={index} className="text-center explore-menu-list-item">
+                  <img src={item.icon} alt="" className='rounded-circle'/>
+                  <p className='mt-2 fw-bold'>{item.category}</p>
                 </div>
               )
             })
