@@ -1,6 +1,6 @@
 import logo from './logo.jpg';
 import cart from './cart.jpg';
-import biryani from './biriyani.jpeg';
+import biryani from './biryani.jpeg';
 import pizza from './pizza.jpeg';
 import burger from './burger.jpeg';
 import salad from './salad.jpeg';

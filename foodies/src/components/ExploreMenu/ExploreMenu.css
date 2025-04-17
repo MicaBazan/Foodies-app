@@ -1,0 +1,11 @@
+.explore-menu.list::-webkit-scrollbar {
+    display: none;
+}
+
+.explore-menu-list-item img {
+    cursor: pointer;
+}
+
+.explore-menu-list-item .active {
+    
+}
